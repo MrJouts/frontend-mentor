@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 body {
-  color: red;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+header nav {
+  display: none;
+}
+header button {
+  border: none;
+  background-color: transparent;
 }/*# sourceMappingURL=styles.css.map */
