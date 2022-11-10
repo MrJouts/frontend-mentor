@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-size: 15px;
   font-family: "Inter", sans-serif;
@@ -8,6 +13,7 @@ header {
   display: flex;
   align-content: center;
   justify-content: space-between;
+  padding: 15px;
 }
 header nav {
   display: none;
@@ -15,4 +21,35 @@ header nav {
 header button {
   border: none;
   background-color: transparent;
+}
+
+#main-topic {
+  padding: 15px;
+}
+#main-topic .main-bk {
+  height: 300px;
+  width: 100%;
+  background: #fff url("../assets/images/image-web-3-mobile.jpg") center center;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+#main-topic h1 {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 100%;
+  margin-bottom: 15px;
+}
+#main-topic p {
+  color: hsl(236deg, 13%, 42%);
+  line-height: 150%;
+  padding-bottom: 20px;
+}
+#main-topic button {
+  background-color: hsl(5deg, 85%, 63%);
+  color: hsl(36deg, 100%, 99%);
+  border: none;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
 }/*# sourceMappingURL=styles.css.map */
