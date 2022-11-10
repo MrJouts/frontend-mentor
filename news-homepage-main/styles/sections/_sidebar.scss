@@ -1,0 +1,30 @@
+#sidebar {
+  padding: 15px;
+
+  > div {
+    padding: 25px;
+    background-color: $very-dark-blue;
+    color: $grayish-blue;
+  }
+
+  article:not(:last-of-type) {
+    border-bottom: 1px solid $dark-rayish-blue;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: $soft-orange;
+    font-size: 32px;
+    padding-bottom: 25px;
+  }
+
+  h3 {
+    color: $off-white;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  p {
+    padding-bottom: 25px;
+  }
+}

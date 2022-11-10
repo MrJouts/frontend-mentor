@@ -52,4 +52,30 @@ header button {
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 3px;
+}
+
+#sidebar {
+  padding: 15px;
+}
+#sidebar > div {
+  padding: 25px;
+  background-color: hsl(240deg, 100%, 5%);
+  color: hsl(233deg, 8%, 79%);
+}
+#sidebar article:not(:last-of-type) {
+  border-bottom: 1px solid hsl(236deg, 13%, 42%);
+  margin-bottom: 20px;
+}
+#sidebar h2 {
+  color: hsl(35deg, 77%, 62%);
+  font-size: 32px;
+  padding-bottom: 25px;
+}
+#sidebar h3 {
+  color: hsl(36deg, 100%, 99%);
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+#sidebar p {
+  padding-bottom: 25px;
 }/*# sourceMappingURL=styles.css.map */
