@@ -147,6 +147,7 @@ header button {
 
 #news {
   padding: 15px;
+  max-width: 1200px;
 }
 #news > div {
   display: flex;
@@ -171,4 +172,16 @@ header button {
 #news p {
   color: hsl(236, 13%, 42%);
   line-height: 150%;
+}
+
+@media (min-width: 768px) {
+  #news {
+    display: flex;
+    margin-inline: auto;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+  #news > div {
+    max-width: 33.33333333%;
+  }
 }/*# sourceMappingURL=styles.css.map */
