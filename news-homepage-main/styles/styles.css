@@ -74,6 +74,35 @@ header button {
     display: none;
   }
 }
+footer {
+  opacity: 0.7;
+  max-width: 1200px;
+  margin-inline: auto;
+  font-size: 80%;
+  padding-inline: 15px;
+  text-align: center;
+}
+footer .attribution {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  padding-block: 30px;
+  flex-direction: column;
+  gap: 6px;
+}
+footer span {
+  display: block;
+  padding: 5px;
+}
+
+@media (min-width: 768px) {
+  footer .attribution {
+    flex-direction: row;
+  }
+  footer span {
+    padding: 0;
+  }
+}
 #main-topic {
   padding: 15px;
 }
