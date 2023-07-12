@@ -6,3 +6,28 @@ body {
   font-size: 15px;
   font-family: "Inter", sans-serif;
 }
+
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-2 {
+    min-width: 360px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-1 {
+    width: calc(1200px * 2 / 3);
+  }
+
+  .col-2 {
+    width: calc(1200px / 3);
+  }
+}

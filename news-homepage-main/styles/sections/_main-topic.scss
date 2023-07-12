@@ -4,9 +4,9 @@
   .main-bk {
     height: 300px;
     width: 100%;
-    background: #fff  url("../assets/images/image-web-3-mobile.jpg") center center;
+    background: #fff url("../assets/images/image-web-3-mobile.jpg") center center;
     background-size: cover;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   h1 {
@@ -30,5 +30,21 @@
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-content {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  .main-title {
+    width: 50%;
+    padding-right: 50px;
+  }
+
+  .main-text {
+    width: 50%;
   }
 }

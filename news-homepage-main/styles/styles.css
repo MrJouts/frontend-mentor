@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,6 +10,26 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+@media (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+  }
+}
+@media (min-width: 992px) {
+  .col-2 {
+    min-width: 360px;
+  }
+}
+@media (min-width: 1200px) {
+  .col-1 {
+    width: 800px;
+  }
+  .col-2 {
+    width: 400px;
+  }
+}
 header {
   display: flex;
   align-content: center;
@@ -57,7 +78,7 @@ header button {
   width: 100%;
   background: #fff url("../assets/images/image-web-3-mobile.jpg") center center;
   background-size: cover;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 #main-topic h1 {
   font-size: 42px;
@@ -80,6 +101,20 @@ header button {
   letter-spacing: 3px;
 }
 
+@media (min-width: 992px) {
+  .main-content {
+    display: flex;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  .main-title {
+    width: 50%;
+    padding-right: 50px;
+  }
+  .main-text {
+    width: 50%;
+  }
+}
 #sidebar {
   padding: 15px;
 }
