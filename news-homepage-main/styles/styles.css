@@ -15,6 +15,10 @@ header {
   justify-content: space-between;
   padding: 15px;
 }
+header .logo {
+  width: 65px;
+  height: 100%;
+}
 header nav {
   display: none;
 }
@@ -23,6 +27,28 @@ header button {
   background-color: transparent;
 }
 
+@media (min-width: 600px) {
+  header nav {
+    display: flex;
+    align-items: center;
+  }
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+  header nav a {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+  }
+  header nav a:hover {
+    color: hsl(5, 85%, 63%);
+  }
+  header button {
+    display: none;
+  }
+}
 #main-topic {
   padding: 15px;
 }

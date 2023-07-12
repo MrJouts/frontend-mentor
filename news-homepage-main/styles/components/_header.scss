@@ -4,6 +4,11 @@ header {
   justify-content: space-between;
   padding: 15px;
 
+  .logo {
+    width: 65px;
+    height: 100%;
+  }
+
   nav {
     display: none;
   }
@@ -11,5 +16,34 @@ header {
   button {
     border: none;
     background-color: transparent;
+  }
+}
+
+
+@media (min-width: 600px) {
+  header {
+    nav {
+      display: flex;
+      align-items: center;
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        column-gap: 30px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $dark-rayish-blue;
+
+        &:hover {
+          color: $soft-red;
+        }
+      }
+    }
+
+    button {
+      display: none;
+    }
   }
 }
