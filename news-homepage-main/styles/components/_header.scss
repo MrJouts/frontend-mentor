@@ -3,6 +3,8 @@ header {
   align-content: center;
   justify-content: space-between;
   padding: 15px;
+  max-width: 1200px;
+
 
   .logo {
     width: 65px;
@@ -22,6 +24,8 @@ header {
 
 @media (min-width: 600px) {
   header {
+    margin: 0 auto;
+
     nav {
       display: flex;
       align-items: center;

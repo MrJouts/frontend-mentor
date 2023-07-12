@@ -35,6 +35,7 @@ header {
   align-content: center;
   justify-content: space-between;
   padding: 15px;
+  max-width: 1200px;
 }
 header .logo {
   width: 65px;
@@ -49,6 +50,9 @@ header button {
 }
 
 @media (min-width: 600px) {
+  header {
+    margin: 0 auto;
+  }
   header nav {
     display: flex;
     align-items: center;
