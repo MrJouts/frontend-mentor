@@ -40,13 +40,13 @@ header button {
   margin-bottom: 15px;
 }
 #main-topic p {
-  color: hsl(236deg, 13%, 42%);
+  color: hsl(236, 13%, 42%);
   line-height: 150%;
   padding-bottom: 20px;
 }
 #main-topic button {
-  background-color: hsl(5deg, 85%, 63%);
-  color: hsl(36deg, 100%, 99%);
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
   border: none;
   padding: 15px 40px;
   text-transform: uppercase;
@@ -59,23 +59,51 @@ header button {
 }
 #sidebar > div {
   padding: 25px;
-  background-color: hsl(240deg, 100%, 5%);
-  color: hsl(233deg, 8%, 79%);
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(233, 8%, 79%);
 }
 #sidebar article:not(:last-of-type) {
-  border-bottom: 1px solid hsl(236deg, 13%, 42%);
+  border-bottom: 1px solid hsl(236, 13%, 42%);
   margin-bottom: 20px;
 }
 #sidebar h2 {
-  color: hsl(35deg, 77%, 62%);
+  color: hsl(35, 77%, 62%);
   font-size: 32px;
   padding-bottom: 25px;
 }
 #sidebar h3 {
-  color: hsl(36deg, 100%, 99%);
+  color: hsl(36, 100%, 99%);
   font-size: 20px;
   padding-bottom: 10px;
 }
 #sidebar p {
   padding-bottom: 25px;
+}
+
+#news {
+  padding: 15px;
+}
+#news > div {
+  display: flex;
+  padding: 15px 0;
+}
+#news img {
+  width: 30%;
+  max-width: 50%;
+  margin-right: 20px;
+}
+#news span {
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 700;
+  color: hsl(233, 8%, 79%);
+  margin-bottom: 15px;
+  display: block;
+}
+#news h3 {
+  margin-bottom: 10px;
+}
+#news p {
+  color: hsl(236, 13%, 42%);
+  line-height: 150%;
 }/*# sourceMappingURL=styles.css.map */
