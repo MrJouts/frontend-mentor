@@ -41,17 +41,76 @@ header .logo {
   width: 65px;
   height: 100%;
 }
-header nav {
-  display: none;
-}
 header button {
   border: none;
   background-color: transparent;
 }
 
+@media (max-width: 599px) {
+  header .navbar-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  header .navbar {
+    background: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 30%;
+  }
+  header .closed {
+    background-color: transparent;
+    position: inherit;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  header .closed .navbar {
+    position: inherit;
+  }
+  header .closed button {
+    padding: 10px;
+    padding-right: 0;
+  }
+  header .closed button img {
+    max-width: 36px;
+  }
+  header .closed nav {
+    display: none;
+  }
+  header button {
+    display: block;
+    margin-left: auto;
+    padding: 20px;
+  }
+  header button img {
+    max-width: 24px;
+  }
+  header nav {
+    margin-top: 50px;
+  }
+  header ul {
+    list-style-type: none;
+  }
+  header a {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    display: block;
+    padding: 10px 20px;
+  }
+}
 @media (min-width: 600px) {
   header {
     margin: 0 auto;
+  }
+  header .navbar-container {
+    display: flex;
+    align-items: center;
   }
   header nav {
     display: flex;

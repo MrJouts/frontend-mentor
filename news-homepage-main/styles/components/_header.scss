@@ -12,7 +12,7 @@ header {
   }
 
   nav {
-    display: none;
+    // display: none;
   }
 
   button {
@@ -22,9 +22,87 @@ header {
 }
 
 
+@media (max-width: 599px) {
+  header {
+
+    .navbar-container {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    .navbar {
+      background: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 30%;
+    }
+
+    .closed {
+      background-color: transparent;
+      position: inherit;
+      display: flex;
+      flex-direction: row-reverse;
+
+      .navbar {
+        position: inherit;
+      }
+
+      button {
+        padding: 10px;
+        padding-right: 0;
+        img {
+          max-width: 36px;
+        }
+      }
+
+      nav {
+        display: none;
+      }
+    }
+
+    button {
+      display: block;
+      margin-left: auto;
+      padding: 20px;
+
+      img {
+        max-width: 24px;
+      }
+    }
+
+    nav {
+      margin-top: 50px;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: $dark-rayish-blue;
+      display: block;
+      padding: 10px 20px;
+    }
+  }
+}
+
+
 @media (min-width: 600px) {
   header {
     margin: 0 auto;
+
+    .navbar-container {
+      display: flex;
+      align-items: center;
+    }
 
     nav {
       display: flex;

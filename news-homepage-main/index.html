@@ -10,20 +10,25 @@
 </head>
 
 <body>
+
   <header>
     <img class="logo" src="./assets/images/logo.svg" alt="Web 3.0" />
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">Trending</a></li>
-        <li><a href="#">Categories</a></li>
-      </ul>
-    </nav>
-    <button>
-      <img src="./assets/images/icon-menu.svg" alt="" />
-    </button>
+    <div id="navbar-container" class="navbar-container closed">
+      <div id="navbar" class="navbar">
+        <button id="navbar-button">
+          <img src="./assets/images/icon-menu.svg" alt="" />
+        </button>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -107,6 +112,8 @@
       </span>
     </div>
   </footer>
+
+  <script src="./script/main.js"></script>
 </body>
 
 </html>
